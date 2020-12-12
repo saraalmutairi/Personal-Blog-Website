@@ -1,0 +1,116 @@
+@import "blogPage.css";
+@import "Post.css";
+
+
+.topnav {
+    background-color: rgb(101, 173, 98);
+    overflow: hidden;
+    margin-top: none;
+   
+}
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.logo {
+    display: flex;
+   margin-bottom: auto;
+   margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+@media screen and (max-width: 1100px){
+.logo {
+    width: 25vw;
+    height: 25vw;
+    float: none;
+    padding: 22.5px 0px 0px 0px; 
+}}
+
+
+
+.home-page-container {
+    display: grid;
+    grid-template-columns:"one" auto auto ;
+    grid-template-rows: auto ;
+    grid-gap: 1rem;
+    margin: 5vh 12vw;
+    min-height: 50vh;
+    text-align: center;
+    background: white;
+    padding: 10px 10px;
+}
+
+
+.post {
+    
+    text-align: center;
+    background: white;
+   
+}
+
+.blog-img {
+    width: 50%;
+}
+
+@media screen and (max-width: 668px) {
+    .home-page-container {
+        grid-template-columns: auto auto;
+        margin: 5vh 15vw;
+    }
+
+    .post {
+            grid-column: 1 / span 2;
+    }
+}
+
+.subscribe-box {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(101, 173, 98);
+    margin:  1rem;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .email-field {
+   display: flex;
+   flex-direction: column;
+   padding: 32px 32px;
+
+  }
+  
+  .email-field input {
+    border: 0;
+    border-radius: 10px;
+    outline: 5rem;
+    padding: 1rem;
+  }
+  
+  #button{
+    border: none;
+    color: white;
+    background-color: rgb(136, 138, 133);
+    padding: 5px;
+    outline: 5rem;
+    border-radius: 10px;
+  }
+  .footer { 
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+   
+   
+  }

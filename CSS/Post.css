@@ -1,0 +1,77 @@
+
+/*.container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feea feea feea feea feea feea feea"
+    " main main main main main main main main"
+    " ft ft ft ft ft ft ft";
+    border: 2px solid yellow;
+}
+.box{
+    border: 1px solid red;
+    background: rosybrown;
+}
+.header{
+    grid-area: hd;
+}
+.footer{
+    grid-area: ft;
+}
+.feature{
+    grid-area: feea;
+}
+.content{
+    grid-area: main;
+}*/
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+     /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: auto;
+      grid-template-rows: 500px 700px ;
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd "
+      "feat feat feat feat feat feat feat feat "
+      "main main main main main main main main "
+      "ft ft ft ft ft ft ft ft"
+     ;
+  
+
+  }
+  .box{
+    width: 100%;
+   /*border: 1px solid red;*/
+    background: none;
+    }
+
+  .header{
+      grid-area:hd;
+      text-align: center;
+      padding: 1rem;
+      letter-spacing: 1px;
+      color: darkolivegreen;
+  }
+
+  .ft{
+      grid-area: ft;
+      
+  }
+  .feature{
+    grid-area: feat;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 50% 50%;
+    color: dimgray;
+
+
+  }
+  .content{
+    grid-area: main;
+    font-style: italic;
+    text-align: justify;
+    color: darkgreen;
+  }
